@@ -22,7 +22,7 @@ public class EnemiesCombat : MonoBehaviour
 
         if (hits.Length > 0)
         {
-            hits[0].GetComponent<PlayerHealth>().changeHealth(damage);
+            hits[0].GetComponent<PlayerHealth>().changeHealth(-damage);
         }
     }
 }
